@@ -40,9 +40,9 @@
             --shadow-purple: 0 8px 30px rgba(124,58,237,0.18);
 
             /* Layout */
-            --section-py: 100px;
-            --container-max: 1080px;
-            --container-px: 2.5rem;
+            --section-py: 56px;
+            --container-max: 1320px;
+            --container-px: 3rem;
             --radius-sm: 8px;
             --radius-md: 14px;
             --radius-lg: 20px;
@@ -123,8 +123,8 @@
         .section-subtitle {
             font-size: 1.0625rem;
             color: var(--text-muted);
-            max-width: 520px;
-            margin-bottom: 3rem;
+            max-width: 600px;
+            margin-bottom: 1.75rem;
         }
 
         /* ===== 1. HERO ===== */
@@ -133,16 +133,16 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            padding: 6rem 0 3rem;
+            padding: 5rem 0 2rem;
         }
 
         section[id] { scroll-margin-top: 80px; }
         .hero-top {
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 3rem;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 2.5rem;
             align-items: center;
-            margin-bottom: 2.5rem;
+            margin-bottom: 1.5rem;
         }
         .hero-content { text-align: left; }
         .hero .client-badge-inline {
@@ -191,7 +191,7 @@
             border-radius: var(--radius-sm);
         }
 
-        .goal-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+        .goal-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.125rem; }
         .goal-card {
             background: var(--bg-card);
             border: 1px solid var(--border);
@@ -213,7 +213,7 @@
         .goal-card p { font-size: 0.8125rem; color: var(--text-muted); line-height: 1.5; }
 
         /* ===== INSTAGRAM AUDIT ===== */
-        .audit-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
+        .audit-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.125rem; }
         .audit-card {
             background: var(--bg-card);
             border: 1px solid var(--border);
@@ -248,11 +248,11 @@
         .audit-status--room-to-grow { background: rgba(245,158,11,0.08); color: #D97706; }
         .audit-status--solid { background: rgba(34,197,94,0.08); color: #16A34A; }
 
-        @media (max-width: 768px) { .audit-grid { grid-template-columns: 1fr; } }
+        @media (max-width: 640px) { .audit-grid { grid-template-columns: 1fr; } }
 
         /* ===== 2. CONTENT PILLARS ===== */
         .pillars-section { background: var(--bg-alt); }
-        .pillars-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+        .pillars-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.125rem; }
         .pillar-card {
             background: var(--bg-card);
             border: 1px solid var(--border);
@@ -284,7 +284,7 @@
         }
 
         /* ===== 3. INSPIRATION ===== */
-        .inspiration-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+        .inspiration-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.125rem; }
         .inspo-card {
             background: var(--bg-card);
             border: 1px solid var(--border);
@@ -324,7 +324,7 @@
         .process-section .section-label { color: var(--purple-light); }
         .process-section .section-title { color: var(--text-on-dark); }
         .process-section .section-subtitle { color: var(--text-on-dark-muted); }
-        .process-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; }
+        .process-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.125rem; }
         .process-card {
             text-align: center;
             padding: 2rem 1.5rem;
@@ -347,7 +347,7 @@
 
         /* ===== WHAT SETS US APART ===== */
         .apart-section { background: var(--bg-alt); }
-        .apart-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
+        .apart-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.125rem; }
         .apart-card {
             background: var(--bg-card);
             border: 1px solid var(--border);
@@ -405,13 +405,13 @@
         }
         .apart-stat span { display: block; font-size: 0.8125rem; font-weight: 400; color: var(--text-muted); letter-spacing: 0; margin-top: 0.125rem; }
 
-        @media (max-width: 768px) {
+        @media (max-width: 640px) {
             .apart-grid { grid-template-columns: 1fr; }
             .apart-card--highlight { grid-template-columns: 1fr; gap: 1.5rem; }
         }
 
         /* ===== 5. PACKAGES ===== */
-        .packages-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; align-items: start; }
+        .packages-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.125rem; align-items: start; }
         .package-card {
             background: var(--bg-card);
             border: 1px solid var(--border);
@@ -510,7 +510,7 @@
         .next-steps { background: var(--bg-deep); }
         .next-steps .section-label { color: var(--purple-light); text-align: center; }
         .next-steps .section-title { color: var(--text-on-dark); text-align: center; margin-bottom: 3.5rem; }
-        .steps-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; max-width: 880px; margin: 0 auto; }
+        .steps-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.125rem; max-width: 880px; margin: 0 auto; }
         .step-item { text-align: center; padding: 0.5rem; }
         .step-num {
             width: 44px; height: 44px;
@@ -541,9 +541,9 @@
         .footer-link:hover { color: var(--purple); }
 
         /* ===== RESPONSIVE ===== */
-        @media (max-width: 1024px) {
-            :root { --container-px: 2rem; --section-py: 80px; }
-            .hero { min-height: auto; padding: 100px 0 60px; }
+        @media (max-width: 900px) {
+            :root { --container-px: 1.75rem; --section-py: 48px; }
+            .hero { min-height: auto; padding: 90px 0 50px; }
             .hero-top { grid-template-columns: 1fr; gap: 2rem; }
             .hero-content { text-align: center; }
             .hero-sub { margin: 0 auto; }
@@ -555,8 +555,8 @@
             .package-card--featured { transform: scale(1.02); }
         }
 
-        @media (max-width: 768px) {
-            :root { --container-px: 1.25rem; --section-py: 64px; }
+        @media (max-width: 640px) {
+            :root { --container-px: 1.25rem; --section-py: 40px; }
             .hero { min-height: auto; padding: 80px 0 40px; }
             .hero-top { grid-template-columns: 1fr; gap: 1.5rem; }
             .hero-image { max-width: 240px; }
